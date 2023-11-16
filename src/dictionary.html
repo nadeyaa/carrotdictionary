@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🥕 Carrot Dictionary 🥕</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background: #fdebd0 url('carrot.jpg') no-repeat fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 3em;
+      font-style: italic;
+      color: #e74c3c;
+      margin-top: 20px;
+    }
+
+    #Word {
+      padding: 15px;
+      border: 2px solid #e67e22;
+      border-radius: 15px;
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+
+    button {
+      padding: 15px 30px;
+      background-color: #e67e22;
+      color: #fff;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d35400;
+    }
+
+    #definition {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #e67e22;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: left;
+    }
+
+    audio {
+      margin-top: 20px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 15px 25px;
+      background-color: #e74c3c;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 30px;
+      font-size: 1.2em;
+    }
+
+    a:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <h1>🥕 Carrot Dictionary 🥕</h1>
+  <input type="text" id="Word" placeholder="Find your word">
+  <button onclick="searchWord()">Search</button>
+
+  <div id="definition"></div>
+
+  <a href="index.html" class="cta-button">WORD OF THE DAY</a>
+
+  <script src="dictionary.js"></script>
+</body>
+</html>

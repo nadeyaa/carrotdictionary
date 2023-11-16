@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WORDS OF THE DAY !</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background: #fdebd0 url('carrot.jpg') no-repeat fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    .mainWrapper {
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #e67e22;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin: 50px auto;
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 10;
+      font-style: italic;
+      color: #e74c3c;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      color: #e67e22;
+    }
+
+    .form-control {
+      width: 90%;
+      padding: 10px;
+      border: 2px solid #e67e22;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 15px 30px;
+      background-color: #e67e22;
+      color: #fff;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d35400;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #e74c3c;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+
+    .cta-button:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <div class="mainWrapper">
+    <h1>🥕 WORDS OF THE DAY ! 🥕</h1>
+    <form>
+      <div class="form-group">
+        <label for="fileName">File name</label>
+        <input id="fileName" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="fileContents">Content</label>
+        <textarea id="fileContents" class="form-control" rows="5"></textarea>
+      </div>
+    </form>
+    <button id="btnCreate" class="btn btn-default">Create</button>
+    <button id="btnRead" class="btn btn-default">Read</button>
+    <button id="btnUpdate" class="btn btn-default">Update</button>
+    <button id="btnDelete" class="btn btn-default">Delete</button>
+    <a href="dictionary.html" class="cta-button">Back</a>
+  </div>
+  <script src="main.js"></script>
+ 
+</body>
+</html>
